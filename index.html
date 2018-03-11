@@ -196,7 +196,9 @@
 }
 #spin:after {
   content:"";
-  animation: spin 30s linear infinite;
+  -webkit-animation: spin 30s linear infinite;
+   -ms-animation: spin 30s linear infinite;
+    animation: spin 30s linear infinite;
 }
 @keyframes spin {
   0% { content:"to remodel my home"; }
@@ -215,7 +217,8 @@
     text-align: center;
 }
 .animated-words {
-    display: inline-block;
+    text-align: center;
+    
 }
 .animated-words span:nth-child(2) { 
     -webkit-animation-delay: 3s; 
@@ -248,7 +251,7 @@
     color: #9b6b9d;
 }
 .animated-words span {
-    position: absolute;
+    position: left;
     opacity: 0;
     overflow: hidden;
     color: #6b969d;
@@ -296,9 +299,8 @@
 </nav>
 
 <div class="jumbotron text-center">
-  <h1>I want <span id="spin"></span></h1> 
-  <p>One company, endless possibilities</p> 
-<div class="text-wrapper">
+<p>Lorem <span id="spin"></span></p>
+   <div class="text-wrapper">
     The quick brown fox jumps over the lazy&nbsp;
     <div class="animated-words">
         <span>dog</span>
@@ -308,6 +310,9 @@
         <span>mouse</span>
         <span>rabbit</span>
     </div>    
+</div>
+  <p>One company, endless possibilities</p> 
+   
 </div>
  
 </div>
@@ -604,3 +609,4 @@ $(document).ready(function(){
 
 </body>
 </html>
+
