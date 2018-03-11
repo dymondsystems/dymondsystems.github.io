@@ -31,7 +31,7 @@
       margin-bottom: 30px;
   }  
   .jumbotron {
-      background-color: #f4511e;
+      background-color: black;
       color: #fff;
       padding: 100px 25px;
       font-family: Montserrat, sans-serif;
@@ -120,7 +120,7 @@
   }
   .navbar {
       margin-bottom: 0;
-      background-color: #f4511e;
+      background-color: black;
       z-index: 9999;
       border: 0;
       font-size: 12px !important;
@@ -188,6 +188,26 @@
         font-size: 150px;
     }
   }
+  
+  #spin {
+  color:#00accd;
+}
+#spin:after {
+  content:"";
+  animation: spin 20s linear infinite;
+}
+@keyframes spin {
+  0% { content:"to remodel my home"; }
+  10% { content:"to repair my home"; }
+  20% { content:"a new kitchen"; }
+  30% { content:"a new bathroom"; }
+  40% { content:"to paint my home"; }
+  50% { content: "new floors"; }
+  60% { content: "property management"; }
+  70% { content: "a new deck"; }
+  80% { content: "a new addition"; }
+  90% { content: "to save energy"; }
+}
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -200,7 +220,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
+      <a class="navbar-brand" href="#myPage">     <img src="https://github.com/dymondsystems/dymondsystems/blob/master/dymond-logo-black.png?raw=true" alt="New York" width="70" height="35"></a>
+   
+
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -215,16 +237,9 @@
 </nav>
 
 <div class="jumbotron text-center">
-  <h1>Company</h1> 
-  <p>We specialize in blablabla</p> 
-  <form>
-    <div class="input-group">
-      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-danger">Subscribe</button>
-      </div>
-    </div>
-  </form>
+  <h1>I want <span id="spin"></span></h1> 
+  <p>One company, endless possibilities</p> 
+ 
 </div>
 
 <!-- Container (About Section) -->
