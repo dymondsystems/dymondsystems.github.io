@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="http://dymondsystems.com/dymondsystems/header.js"></script>
   <style>
   body {
       font: 400 15px Lato, sans-serif;
@@ -209,7 +210,64 @@
   80% { content: "a new addition"; }
   90% { content: "to save energy"; }
 }
+
+.text-wrapper {
+    text-align: center;
+}
+.animated-words {
+    display: inline-block;
+}
+.animated-words span:nth-child(2) { 
+    -webkit-animation-delay: 3s; 
+    -ms-animation-delay: 3s; 
+    animation-delay: 3s; 
+    color: #6b889d;
+}
+.animated-words span:nth-child(3) { 
+    -webkit-animation-delay: 6s; 
+    -ms-animation-delay: 6s; 
+    animation-delay: 6s; 
+    color: #6b739d; 
+}
+.animated-words span:nth-child(4) { 
+    -webkit-animation-delay: 9s; 
+    -ms-animation-delay: 9s; 
+    animation-delay: 9s; 
+    color: #7a6b9d;
+}
+.animated-words span:nth-child(5) { 
+    -webkit-animation-delay: 12s; 
+    -ms-animation-delay: 12s; 
+    animation-delay: 12s; 
+    color: #8d6b9d;
+}
+.animated-words span:nth-child(6) { 
+    -webkit-animation-delay: 15s; 
+    -ms-animation-delay: 15s; 
+    animation-delay: 15s; 
+    color: #9b6b9d;
+}
+.animated-words span {
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    color: #6b969d;
+    -webkit-animation: animateWord 18s linear infinite 0s;
+    -ms-animation: animateWord 18s linear infinite 0s;
+    animation: animateWord 18s linear infinite 0s;
+}
+@-webkit-keyframes animateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); }
+    5% { opacity: 1; -webkit-transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); }
+    20% { opacity: 0; -webkit-transform: translateY(30px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
   </style>
+
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
@@ -240,6 +298,17 @@
 <div class="jumbotron text-center">
   <h1>I want <span id="spin"></span></h1> 
   <p>One company, endless possibilities</p> 
+<div class="text-wrapper">
+    The quick brown fox jumps over the lazy&nbsp;
+    <div class="animated-words">
+        <span>dog</span>
+        <span>horse</span>
+        <span>frog</span>
+        <span>cat</span>
+        <span>mouse</span>
+        <span>rabbit</span>
+    </div>    
+</div>
  
 </div>
 
