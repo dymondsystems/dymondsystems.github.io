@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +7,11 @@
   <title>Bootstrap Theme Company Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
@@ -13,6 +19,16 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    <script src="http://dymondsystems.com/dymondsystems/header.js"></script>
   <style>
+   .modal-header, h5, .close {
+      background-color: #00accd;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 70px 50px;
+  }
+  
   body {
       font: 400 15px Lato, sans-serif;
       line-height: 1.8;
@@ -45,11 +61,11 @@
       background-color: #f6f6f6;
   }
   .logo-small {
-      color: #f4511e;
+      color: #00accd;
       font-size: 50px;
   }
   .logo {
-      color: #f4511e;
+      color: #00accd;
       font-size: 200px;
   }
   .thumbnail {
@@ -64,13 +80,13 @@
   }
   .carousel-control.right, .carousel-control.left {
       background-image: none;
-      color: #f4511e;
+      color: #00accd;
   }
   .carousel-indicators li {
-      border-color: #f4511e;
+      border-color: #00accd;
   }
   .carousel-indicators li.active {
-      background-color: #f4511e;
+      background-color: #00accd;
   }
   .item h4 {
       font-size: 19px;
@@ -117,7 +133,7 @@
   }
   .panel-footer .btn {
       margin: 15px 0;
-      background-color: #f4511e;
+      background-color: #00accd;
       color: #fff;
   }
   .navbar {
@@ -133,20 +149,20 @@
       font-family: Montserrat, sans-serif;
   }
   .navbar li a, .navbar .navbar-brand {
-      color: #fff !important;
+      color: #00accd  !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #f4511e !important;
-      background-color: #fff !important;
+      color: #fff!important;
+      background-color: #00accd  !important;
   }
   .navbar-default .navbar-toggle {
       border-color: transparent;
-      color: #fff !important;
+      color: #00accd  !important;
   }
   footer .glyphicon {
       font-size: 20px;
       margin-bottom: 20px;
-      color: #f4511e;
+      color: #00accd;
   }
   .slideanim {visibility:hidden;}
   .slide {
@@ -315,8 +331,79 @@
 </div>
 
   <p>One company, endless possibilities</p>
+  
+
+
+  
+ 
+
+
+  
+  <br>
+  
+  
+   <button class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">Contact us!</button>
    
 </div>
+ <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+      
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h1>Contact</h1>
+    
+        </div>
+         
+        <div class="modal-body">
+        <form role="form">
+            <div class="form-group">
+              <label for="psw">
+       <i class="fa fa-phone fa-fw"></i> Call
+         
+          <p>23223232323</p>
+             
+              <div> <i class="fa fa-comment fa-fw"></i> Text
+             <br>
+             <a href="#paas" class="btn btn-success btn-lg">
+    <span class="glyphicon glyphicon"></span> Send message
+    
+  </a></div>
+  
+                  <i class="fa fa-envelope fa-fw"></i> 
+                   
+                    Email us
+                    <br>
+              <a href="#paas">hello@dymondsystems.com
+    
+  </a>        
+            
+              
+           
+   
+            </div>
+            </div>
+       
+              
+ 
+            
+            
+   
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+          <p>Need <a href="#">help?</a></p>
+        </div>
+            </div>
+    </div>
+  </div>
+</div>
+ 
+  
  
 
 
@@ -324,9 +411,9 @@
 <div id="about" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
-      <h2>About Company Page</h2><br>
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h2>About us</h2><br>
+      <h3>We want to make your experience with renovation and repair contractors as seamless as possible by combining all services into a single entity.</h3><br>
+      <p>Thank you for your interest in Dymond! </p>
       <br><button class="btn btn-default btn-lg">Get in Touch</button>
     </div>
     <div class="col-sm-4">
@@ -354,9 +441,11 @@
   <h2>SERVICES</h2>
   <h4>What we offer</h4>
   <br>
+  <a href="https://angel.co/partlab"><i class="fas fa-football-ball fa-10x"></i></a>
+  
   <div class="row slideanim">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-off logo-small"></span>
+      <span class="icon fa fa-angellist"></span>
       <h4>POWER</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
@@ -549,6 +638,55 @@
   </div>
 </div>
 
+<!-- pop up modal-->
+ 
+<div class="modal fade" id="overlay">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h2 class="modal-title"><font color="white">Contact us</font></h2>
+      </div>
+ 
+      <div class="modal-body">
+        <p><font color="gray">Thank you for you interest. We're eager to answer your questions!</font>
+            <br>
+            <br>
+          
+ <a href=""><i class="fa fa-phone fa-fw" style="font-size:60px;"></i>Call us: 336-23383838</a>
+
+            <br>
+            <br>
+            <p>Send us a text</p>
+            <a href="#" class="btn btn-success btn-lg">
+    <span class="glyphicon glyphicon"></span> Send message
+    
+  </a>
+  
+  
+ 
+        </p>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Not now
+          </button>
+        
+  </div>
+  </div>
+</div>  
+</div>
+
+    
+<script>
+     
+  
+  
+
+setTimeout(function() {
+    $('#overlay').modal('show');
+}, 10000);  
+</script>
+
 <!-- Add Google Maps -->
 <div id="googleMap" style="height:400px;width:100%;"></div>
 <script>
@@ -570,7 +708,8 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+  <br><p>Site made with
+ <a href="#"><i class="fa fa-heart fa-fw"></i> by Travis Summerlin</a></p>
 </footer>
 
 <script>
